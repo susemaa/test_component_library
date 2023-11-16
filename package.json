@@ -3,10 +3,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/susemaa"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint --ext js,jsx,ts,tsx --no-eslintrc --config .eslintrc.js src/",
