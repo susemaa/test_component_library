@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/susemaa"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/types",
@@ -38,6 +38,7 @@
     "@storybook/react": "^7.5.3",
     "@storybook/react-webpack5": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
+    "@types/draft-js": "^0.11.15",
     "@types/react": "^18.2.37",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
@@ -58,5 +59,8 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "dependencies": {
+    "draft-js": "^0.11.7"
   }
 }

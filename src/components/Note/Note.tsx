@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatDate } from '../../utils';
 
 interface NoteProps {
   title: string,
@@ -6,22 +7,9 @@ interface NoteProps {
   date: Date,
 }
 
-function formatDate(initialDate: Date): string {
-  const options = {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-  } as const;
-  const formattedDate = initialDate.toLocaleDateString('ru-RU', options);
-  return formattedDate;
-}
-
-function Note({ title, body, date }: NoteProps) {
+const Note: React.FC<NoteProps> = ({ title, body, date }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 m-4">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 m-4 rounded">
       <div className="font-bold text-xl mb-2">{title}</div>
       <p className="text-gray-700 text-base max-h-96 overflow-y-auto bg-red">
         {body}
