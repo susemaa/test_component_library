@@ -19,6 +19,6 @@ const Note: React.FC<NoteProps> = ({ title, body, date }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Note;
