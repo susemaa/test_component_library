@@ -24,3 +24,4 @@ const Note: React.FC<NoteProps> = ({ title, body, date }) => {
 };
 
 export default Note;
+export { NoteProps };
