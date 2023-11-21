@@ -4,7 +4,7 @@ import 'draft-js/dist/Draft.css';
 
 interface EditableTextInputProps {
   label: string;
-  value: string;
+  value?: string;
   onChange: (value: string) => void;
 }
 
