@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Editor, EditorState, RichUtils, convertFromRaw, convertToRaw, ContentBlock } from 'draft-js';
+import { Editor, EditorState, RichUtils, convertFromRaw, convertToRaw } from 'draft-js';
 import 'draft-js/dist/Draft.css';
 
 interface EditableTextInputProps {
@@ -52,3 +52,7 @@ const EditableTextInput: React.FC<EditableTextInputProps> = ({ label, value, onC
 };
 
 export default EditableTextInput;
+
+const emptyTextInputValue = JSON.stringify(convertToRaw(EditorState.createEmpty().getCurrentContent()));
+
+export { emptyTextInputValue };
