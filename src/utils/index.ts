@@ -1,5 +1,3 @@
-import { ContentBlock } from "draft-js";
-
 function formatDate(initialDate: Date): string {
   const options = {
     year: 'numeric',

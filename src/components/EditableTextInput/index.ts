@@ -1,1 +1,2 @@
-export { default, emptyTextInputValue } from './EditableTextInput';
+export { default } from './EditableTextInput';
+export { emptyTextInputValue } from './EditableTextInput';

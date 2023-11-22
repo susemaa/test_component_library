@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Editor, EditorState, RichUtils, convertFromRaw, convertToRaw } from 'draft-js';
+import {
+  Editor, EditorState, RichUtils, convertFromRaw, convertToRaw,
+} from 'draft-js';
 import 'draft-js/dist/Draft.css';
 
 interface EditableTextInputProps {
@@ -10,8 +12,10 @@ interface EditableTextInputProps {
 
 const EditableTextInput: React.FC<EditableTextInputProps> = ({ label, value, onChange }) => {
   const [editorState, setEditorState] = useState(
-    value ? EditorState.createWithContent(convertFromRaw(JSON.parse(value))) : EditorState.createEmpty()
-    );
+    value
+      ? EditorState.createWithContent(convertFromRaw(JSON.parse(value)))
+      : EditorState.createEmpty(),
+  );
 
   const applyStyle = (style: string) => {
     setEditorState(RichUtils.toggleInlineStyle(editorState, style));
@@ -40,7 +44,8 @@ const EditableTextInput: React.FC<EditableTextInputProps> = ({ label, value, onC
           onMouseDown={(e) => {
             e.preventDefault();
             applyStyle('BOLD');
-          }}>
+          }}
+        >
           B
         </button>
       </div>
@@ -53,6 +58,11 @@ const EditableTextInput: React.FC<EditableTextInputProps> = ({ label, value, onC
 
 export default EditableTextInput;
 
-const emptyTextInputValue = JSON.stringify(convertToRaw(EditorState.createEmpty().getCurrentContent()));
+const emptyTextInputValue = JSON.stringify(
+  convertToRaw(
+    EditorState.createEmpty()
+      .getCurrentContent(),
+  ),
+);
 
 export { emptyTextInputValue };
