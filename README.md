@@ -2,6 +2,10 @@
 
 Test npm package with React reusable components.
 
+## Usage
+
+### `npm install @susemaa/test_component_library`
+
 ## Comopnents
 
 ### EditableTextInput
