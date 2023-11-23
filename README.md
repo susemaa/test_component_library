@@ -10,7 +10,7 @@ The text input in which user can set his text Bold
 
 Props:
   - label 
-  
+
 Label for your EditableTextInput. Type string. Has to be simple string (e.g. 'Edit your text easily').
   - value
 
@@ -19,6 +19,8 @@ Library also provides EmptyTextInputValue for setting it as default value of for
   - onChange
 
 Contains function to change your state. (e.g. onChange={(newValue) => setValue(newValue)}).
+
+##
 
 ### Note
 
