@@ -6,9 +6,10 @@ Test npm package with React reusable components.
 
 ### `npm install @susemaa/test_component_library`
 
-## Comopnents
+<details>
+  <summary>## Comopnents</summary>
 
-### EditableTextInput
+  ### EditableTextInput
 
 The text input in which user can set his text Bold
 
@@ -35,8 +36,4 @@ Props:
 
 Title for your Note. Type string. Has to be simple string (e.g. 'Note 1').
   - body
-
-Same as EditableTextInput.value
-  - date
-
-Date of note creation. Type Date. (e.g. new Date())
+</details>
