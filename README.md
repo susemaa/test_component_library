@@ -6,10 +6,9 @@ Test npm package with React reusable components.
 
 ### `npm install @susemaa/test_component_library`
 
-<details>
-  ## <summary>
-    Comopnents
-  </summary>
+<h>
+
+  ## Components
 
   ### EditableTextInput
 
@@ -38,4 +37,3 @@ Props:
 
 Title for your Note. Type string. Has to be simple string (e.g. 'Note 1').
   - body
-</details>
